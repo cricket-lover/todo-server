@@ -11,6 +11,7 @@ const {
 
 app.use(express.static('build'));
 app.use(express.json());
+
 app.get('/api/getTodo', getTodo);
 app.post('/api/addTask', addTask);
 app.post('/api/toggleTaskStatus', toggleTaskStatus);
